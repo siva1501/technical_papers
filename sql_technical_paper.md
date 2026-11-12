@@ -7,31 +7,6 @@ examples, and interview points.
 > differs between PostgreSQL, MySQL, SQL Server, and SQLite.
 > PostgreSQL-specific notes are labelled where useful.
 
-## Table of Contents
-
-1.  [SQL Fundamentals](#1-sql-fundamentals)
-2.  [SQL Command Categories](#2-sql-command-categories)
-3.  [Filtering and Sorting](#3-filtering-and-sorting)
-4.  [SQL Functions](#4-sql-functions)
-5.  [Aggregate Functions, GROUP BY, and
-    HAVING](#5-aggregate-functions-group-by-and-having)
-6.  [Joins](#6-joins)
-7.  [Subqueries](#7-subqueries)
-8.  [Common Table Expressions (CTEs)](#8-common-table-expressions-ctes)
-9.  [Database Normalization](#9-database-normalization)
-10. [Keys and Constraints](#10-keys-and-constraints)
-11. [Transactions and ACID](#11-transactions-and-acid)
-12. [Indexes and Views](#12-indexes-and-views)
-13. [Window Functions](#13-window-functions)
-14. [Database Design and
-    Relationships](#14-database-design-and-relationships)
-15. [Stored Procedures, Functions, and
-    Triggers](#15-stored-procedures-functions-and-triggers)
-16. [Query Execution and
-    Optimization](#16-query-execution-and-optimization)
-17. [Common Interview Comparisons](#17-common-interview-comparisons)
-18. [Practice Questions](#18-practice-questions)
-
 ------------------------------------------------------------------------
 
 ## 1. SQL Fundamentals
