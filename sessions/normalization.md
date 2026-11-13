@@ -9,7 +9,6 @@ It divides large tables into smaller, related tables and establishes relationshi
 ### Why is Normalization Important?
 
 - Reduces duplicate data.
-- Prevents data insertion, update, and deletion problems.
 - Improves data consistency.
 - Makes database management easier.
 - Organizes data efficiently.
