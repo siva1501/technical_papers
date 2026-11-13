@@ -1,4 +1,4 @@
-# SQL Normalization – Presentation Notes
+# SQL Normalization
 
 ## 1. Introduction
 
