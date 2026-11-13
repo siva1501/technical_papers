@@ -14,18 +14,6 @@ It divides large tables into smaller, related tables and establishes relationshi
 - Makes database management easier.
 - Organizes data efficiently.
 
-### Example
-
-Consider a table containing student and course information:
-
-| Student_ID | Student_Name | Course |
-|---|---|---|
-| 1 | Rahul | SQL |
-| 1 | Rahul | Python |
-| 2 | Priya | Java |
-
-Here, the student's name is repeated. Normalization helps organize this information into separate tables to avoid unnecessary duplication.
-
 ---
 
 ## 2. First Normal Form (1NF)
