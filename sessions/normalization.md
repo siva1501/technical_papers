@@ -233,124 +233,6 @@ Now, every determinant in the resulting tables is a super key.
 
 ---
 
-## 6. Fourth Normal Form (4NF)
-
-Fourth Normal Form (4NF) deals with multivalued dependencies.
-
-A table is in 4NF if it is already in BCNF and contains no non-trivial multivalued dependencies unless the determinant is a super key.
-
-In simple words, 4NF removes independent multiple values stored in the same table.
-
-### Rules of 4NF
-
-- The table must already be in BCNF.
-- It should not contain unwanted multivalued dependencies.
-- Every non-trivial multivalued dependency must have a super key as its determinant.
-
-### Example
-
-Consider a student who has multiple hobbies and knows multiple languages.
-
-**Before 4NF:**
-
-| Student | Hobby | Language |
-|---|---|---|
-| Rahul | Cricket | English |
-| Rahul | Cricket | Hindi |
-| Rahul | Football | English |
-| Rahul | Football | Hindi |
-
-Here:
-
-- Rahul has two hobbies.
-- Rahul knows two languages.
-- Hobbies and languages are independent of each other.
-
-This creates unnecessary combinations.
-
-**After 4NF:**
-
-**Student_Hobby Table**
-
-| Student | Hobby |
-|---|---|
-| Rahul | Cricket |
-| Rahul | Football |
-
-**Student_Language Table**
-
-| Student | Language |
-|---|---|
-| Rahul | English |
-| Rahul | Hindi |
-
-Now, hobbies and languages are stored separately.
-
-**Conclusion:** 4NF removes independent multivalued dependencies and reduces unnecessary data combinations.
-
----
-
-## 7. Fifth Normal Form (5NF)
-
-Fifth Normal Form (5NF), also known as Project-Join Normal Form (PJNF), deals with join dependencies.
-
-A table is in 5NF if it is already in 4NF and cannot be further decomposed into smaller tables without losing information.
-
-In simple words, 5NF breaks a table into smaller tables when doing so helps eliminate redundancy, while ensuring that the original information can be reconstructed through joins.
-
-### Rules of 5NF
-
-- The table must already be in 4NF.
-- It should not contain non-trivial join dependencies that can be further decomposed.
-- Decomposition must be lossless.
-- The original table must be reconstructed by joining the smaller tables.
-
-### Example
-
-Consider a company where suppliers supply products to projects.
-
-**Before 5NF:**
-
-| Supplier | Product | Project |
-|---|---|---|
-| S1 | Laptop | P1 |
-| S1 | Mobile | P1 |
-| S1 | Laptop | P2 |
-| S2 | Laptop | P1 |
-
-Assume the business rules allow the supplier-product, supplier-project, and product-project relationships to be represented independently.
-
-**After 5NF:**
-
-**Supplier_Product Table**
-
-| Supplier | Product |
-|---|---|
-| S1 | Laptop |
-| S1 | Mobile |
-| S2 | Laptop |
-
-**Supplier_Project Table**
-
-| Supplier | Project |
-|---|---|
-| S1 | P1 |
-| S1 | P2 |
-| S2 | P1 |
-
-**Product_Project Table**
-
-| Product | Project |
-|---|---|
-| Laptop | P1 |
-| Laptop | P2 |
-| Mobile | P1 |
-
-These tables can be joined to reconstruct the original supplier-product-project relationships, provided the stated business rules hold.
-
-**Conclusion:** 5NF removes redundancy caused by complex join dependencies and ensures lossless decomposition.
-
----
 
 ## Summary
 
@@ -360,11 +242,10 @@ These tables can be joined to reconstruct the original supplier-product-project 
 | 2NF | Removes partial dependencies. |
 | 3NF | Removes transitive dependencies. |
 | BCNF | Ensures every determinant is a super key. |
-| 4NF | Removes independent multivalued dependencies. |
-| 5NF | Removes redundancy caused by join dependencies. |
+
 
 ## Final Conclusion
 
 SQL Normalization is an important database design technique that helps organize data, reduce redundancy, and maintain data consistency.
 
-Each normal form solves a specific type of database problem, starting from atomic values in 1NF to complex join dependencies in 5NF.
+Each normal form solves a specific type of database problem.
