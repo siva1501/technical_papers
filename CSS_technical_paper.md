@@ -1084,13 +1084,3 @@ Skills used: Grid layout with grid-template-areas, Flexbox, sticky sidebar, medi
 5. Learn in order. Do not skip the Box Model; Flexbox and Grid depend on it.
 6. Play games to learn layouts: Flexbox Froggy (flexboxfroggy.com) and Grid Garden (cssgridgarden.com).
 7. Reference documentation: MDN Web Docs (developer.mozilla.org/en-US/docs/Web/CSS).
-
-## What to Learn After CSS
-
-1. JavaScript (make pages interactive)
-2. Git and GitHub (save and share your code)
-3. CSS frameworks (Tailwind CSS, Bootstrap)
-4. Sass or SCSS (CSS with superpowers)
-5. React (build modern web apps)
-
-Happy coding. Keep practicing, and build something every week.
