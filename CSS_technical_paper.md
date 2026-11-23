@@ -1093,3 +1093,4 @@ Skills used: Grid layout with grid-template-areas, Flexbox, sticky sidebar, medi
 4. Sass or SCSS (CSS with superpowers)
 5. React (build modern web apps)
 
+Happy coding. Keep practicing, and build something every week.
